@@ -96,12 +96,12 @@ $db['default'] = array(
 );
 
 $db['pgsql'] = array(
-	'dsn'	=> '',
+	'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=codeigniter_news_app_development',
 	'hostname' => 'localhost',
 	'username' => 'postgres',
 	'password' => 'toor',
 	'database' => 'codeigniter_news_app_development',
-	'dbdriver' => 'pgsql',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
